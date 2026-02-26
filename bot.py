@@ -3,8 +3,8 @@ import requests
 from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTypes
 
-TELEGRAM_TOKEN = os.getenv("8695338967:AAGGBnptTtpvxJ84Gd5f1ffIUYyIwUUwe10")
-AI_API_KEY = os.getenv("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")
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+AI_API_KEY = os.getenv("AI_API_KEY")
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_text = update.message.text
